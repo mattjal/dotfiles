@@ -16,7 +16,7 @@
 	dt = difftool --cached
 	clone = clone --recursive
 	alias = config --get-regexp 'alias.*'
-  
+
 
 [color "branch"]
 	current = yellow reverse
