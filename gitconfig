@@ -68,6 +68,4 @@
 	cmd = chdiff \"$LOCAL\" \"$REMOTE\"
 [difftool "Kaleidoscope"]
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[github]
-	user = mattjal
-	token = 2928310bc37ceada4d64dba212c7068b
+	
