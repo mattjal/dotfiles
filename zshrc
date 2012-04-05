@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
+ZSH_THEME="robbyrussell"
+
 unsetopt correct_all 
 unsetopt correct
 
@@ -23,15 +25,10 @@ unsetopt correct
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-# Prompt
-PROMPT="%{$fg_bold[red]%}➜ %{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}"
-
-ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
 # Handle the fact that this file will be used with multiple OSs
 platform=`uname`
 if [[ $platform = 'Linux' ]]; then
