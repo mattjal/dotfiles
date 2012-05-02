@@ -153,3 +153,4 @@ function save (){
   source ~/.dirs
   echo "Directory shortcuts:" `showdirs`
 }
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
