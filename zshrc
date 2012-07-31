@@ -88,6 +88,7 @@ alias gs='git status'
 alias grm='git status --porcelain | ruby -e "puts STDIN.read.scan(/^\\s+D\\s+(.+)\$/).join(\"\\n\")" | xargs git rm'
 alias open_html='open -a Google\ Chrome build/*/index_us.html'
 alias open_archived='open -a Google\ Chrome build/_archived/*/index_us.html'
+alias open_firefox='open -a Firefox build/*/index_us.html'
 
 # =============================
 # = Directory save and recall =
