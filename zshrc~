@@ -87,7 +87,6 @@ alias g='git status -sb'
 alias gs='git status'
 alias grm='git status --porcelain | ruby -e "puts STDIN.read.scan(/^\\s+D\\s+(.+)\$/).join(\"\\n\")" | xargs git rm'
 alias open_html='open -a Google\ Chrome build/*/index_us.html'
-alias open_archived='open -a Google\ Chrome build/_archived/*/index_us.html'
 
 # =============================
 # = Directory save and recall =
@@ -155,4 +154,3 @@ function save (){
   echo "Directory shortcuts:" `showdirs`
 }
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/bin 
