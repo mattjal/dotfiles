@@ -62,7 +62,6 @@ alias ss='svn st'
 alias sup='svn up'
 alias sci='svn ci'
 alias sl='svn log'
-alias kdiff="svn diff --diff-cmd ksdiff-svnwrapper https://sourcebox.apple.com/repos/applecom -c ";
 
 # git shortcuts
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
