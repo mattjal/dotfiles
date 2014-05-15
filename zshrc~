@@ -1,3 +1,6 @@
+# autojump thing
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -44,6 +47,8 @@ elif [[ $platform = 'Darwin' ]]; then
   alias flushdns="dscacheutil -flushcache"
 fi
 
+alias subl='open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
 # ruby (irb)
 alias irb='irb --readline -r irb/completion'
 
@@ -77,7 +82,7 @@ alias gcm='git commit -m'
 alias gco='git checkout'
 alias gd='git diff'
 alias gdt='git difftool'
-alias gg='git lg'
+alias gg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias ggg='git logc'
 alias gggg='git logd'
 alias gl='git pull --rebase'
@@ -90,6 +95,8 @@ alias open_safari='open -a Safari build/*/index_us.html'
 alias open_archived='open -a Google\ Chrome build/_archived/*/index_us.html'
 alias open_archived_safari='open -a Safari build/_archived/*/index_us.html'
 alias open_firefox='open -a Firefox build/*/index_us.html'
+
+
 
 # =============================
 # = Directory save and recall =
