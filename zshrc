@@ -47,7 +47,7 @@ elif [[ $platform = 'Darwin' ]]; then
   alias flushdns="dscacheutil -flushcache"
 fi
 
-alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias sub='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 # ruby (irb)
 alias irb='irb --readline -r irb/completion'
