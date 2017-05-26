@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-unsetopt correct_all 
+unsetopt correct_all
 unsetopt correct
 
 # Set to this to use case-sensitive completion
@@ -39,7 +39,7 @@ if [[ $platform = 'Linux' ]]; then
 elif [[ $platform = 'Darwin' ]]; then
   alias a='ls -lthG' # sort by date modified
   alias ls='ls -G'  # OS-X SPECIFIC - the -G command in OS-X is for colors, in Linux it's no groups
-  export EDITOR='mate -w'  # OS-X SPECIFIC - TextMate, w is to wait for TextMate window to close
+  export EDITOR='Atom -w'  # OS-X SPECIFIC - TextMate, w is to wait for TextMate window to close
   alias lock="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
   alias flushdns="dscacheutil -flushcache"
 fi
@@ -106,7 +106,7 @@ alias open_firefox='open -a Firefox build/*/index_us.html'
 #    You can save a directory using an abbreviation of your choosing. Eg. save ms
 #    You can subsequently move to one of the saved directories by using cd with
 #    the abbreviation you chose. Eg. cd ms  (Note that no '$' is necessary.)
-#    
+#
 #    Make sure to also set the appropriate shell option:
 #    zsh:
 #      setopt CDABLE_VARS
@@ -162,8 +162,8 @@ function save (){
   source ~/.dirs
   echo "Directory shortcuts:" `showdirs`
 }
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/bin 
+PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/bin
 
 export NVM_DIR="/Users/matt/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
