@@ -25,6 +25,7 @@ unsetopt correct
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
