@@ -96,6 +96,8 @@ alias open_archived='open -a Google\ Chrome build/_archived/*/index_us.html'
 alias open_archived_safari='open -a Safari build/_archived/*/index_us.html'
 alias open_firefox='open -a Firefox build/*/index_us.html'
 
+# Emailbuilder shortcuts
+alias sb='script/build'
 
 
 # =============================
